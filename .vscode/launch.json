@@ -1,0 +1,89 @@
+{
+    "version": "2.0.0",
+    "compounds": [
+        {
+			"name": ".NET Core Launch",
+			"configurations": [
+				".NET Core Launch (api)",
+				".NET Core Launch (web)"
+			]
+        }
+    ],
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/CloudAPI.Server/bin/Debug/netcoreapp2.0/CloudAPI.Server.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}/CloudAPI.Server",
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": ".NET Core Launch (api)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/CloudAPI.Server/bin/Debug/netcoreapp2.0/CloudAPI.Server.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}/CloudAPI.Server",
+            "stopAtEntry": false,
+            "requireExactSource": true,
+            "launchBrowser": {
+                "enabled": true,
+                "args": "http://localhost:5000/docs",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start http://localhost:5000/docs"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        {
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/CloudAPI.Portal/bin/Debug/netcoreapp2.0/CloudAPI.Portal.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}/CloudAPI.Portal",
+            "stopAtEntry": false,
+            "launchBrowser": {
+                "enabled": true,
+                "args": "http://localhost:5050/",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start http://localhost:5050/"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceRoot}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}

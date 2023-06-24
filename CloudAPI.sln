@@ -1,8 +1,8 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
-MinimumVisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudAPI.Runtime", "CloudAPI.Runtime\CloudAPI.Runtime.csproj", "{C580082E-E966-49FD-8B45-9EA84DDA620A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudAPI.Server", "CloudAPI.Server\CloudAPI.Server.csproj", "{1667117C-320E-4CF7-B792-88B449FE5D32}"
